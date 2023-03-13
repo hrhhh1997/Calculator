@@ -18,12 +18,55 @@ body .calc-container{
     border-radius: 5px;
     margin-bottom: 1rem;
     border: 2px solid;
+    margin-top: 1rem;
 }
 
 .calc-container .buttons{
     width: 90%;
     margin: auto;
     padding: 0.5rem 0.3rem 0.5rem;
+    border: 2px solid;
+    border-radius: 5px;
+    background-color: #EEEEEE;
+    margin-bottom: 2rem;
+}
+
+.calc-container .buttons-row-1, .buttons-row-2, .buttons-row-3, .buttons-row-4, .buttons-row-5{
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+.buttons-row-1 button, .buttons-row-2 button, .buttons-row-3 button, .buttons-row-4 button, .buttons-row-5 button{
+    flex: 1;
+    height: 4rem;
+    margin: 0.4rem;
+    border-radius: 5px;
+}
+
+#btn-equals{
+    flex-basis: 9.2rem;
+}
+
+#btn-power, #btn-clear, #btn-clearAll{
+    background-color: #cdcaca;
+}
+
+#btn-power{
+    color: #A84448;
+}
+
+#btn-add, #btn-subtract, #btn-multiply, #btn-divide, #btn-equals{
+    background-color: #F99417;
+}
+
+#btn-1, #btn-2, #btn-3, #btn-4, #btn-5, #btn-6, #btn-7, #btn-8, #btn-9, #btn-0, #btn-decimal{
+    background-color: #7F8487;
+    color: #fff;
+}
+
+button{
+    font-size: 2rem;
 }
 
 
@@ -33,9 +76,45 @@ body .calc-container{
 
 
 
+/* @media (max-width: 1336px){
+    #btn-equals{
+        flex-basis: 8.5rem;
+    }
+} */
 
 @media (max-width: 980px){
     .calc-container .screen{
         font-size: 34px;
+    }
+
+    #btn-equals{
+        flex-basis: 5rem;
+        min-width: 5.2rem;
+    }
+
+    button{
+        min-width: 1.8rem;
+        font-size: 12px;
+    }
+
+    .buttons-row-1 button, .buttons-row-2 button, .buttons-row-3 button, .buttons-row-4 button, .buttons-row-5 button{
+        flex: 1;
+        height: 2rem;
+        margin: 0.2rem;
+        border-radius: 5px;
+    }
+    
+}
+
+@media (max-width: 940px){
+    #btn-equals{
+        flex-basis: 6rem;
+        min-width: 5.2rem;
+    }
+}
+
+@media (max-width: 400px){
+    #btn-equals{
+        flex-basis: 4rem;
     }
 }
