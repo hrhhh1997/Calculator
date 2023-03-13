@@ -1,0 +1,41 @@
+
+body .calc-container{
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    background-color: #DDDDDD;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.calc-container .screen{
+    width: 90%;
+    padding: 0.5rem 0.3rem 0.5rem;
+    margin: auto;
+    font-size: 3rem;
+    text-align: right;
+    background-color: #F5F5F5;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    border: 2px solid;
+}
+
+.calc-container .buttons{
+    width: 90%;
+    margin: auto;
+    padding: 0.5rem 0.3rem 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 980px){
+    .calc-container .screen{
+        font-size: 34px;
+    }
+}
