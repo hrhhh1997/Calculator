@@ -18,6 +18,7 @@ body {
     border: 1px solid white;
     outline: none;
     font-size: clamp(10px, calc(2vw + 10px), 2rem);
+    border-radius: 1px;
 }
 
 .calculator-container > button:hover {
@@ -26,6 +27,11 @@ body {
 
 .span-two {
     grid-column: span 2;
+    background-color: #98D8AA;
+}
+
+.span-two.equals:hover {
+    background-color: #539165;
 }
 
 .display {
@@ -51,4 +57,18 @@ body {
 .display .current-display {
     color: #ffffff;
     font-size: clamp(10px, calc(4vw + 10px), 40px);
+}
+
+.operation {
+    background-color: #FF6000;
+    color: #fff;
+}
+
+.operation:hover,  .function-btn:hover{
+    color: #000;
+}
+
+.function-btn {
+    background-color: #9BA4B5;
+    color: #fff;
 }
