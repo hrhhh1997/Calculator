@@ -1,7 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(to right, #ACBCFF, #D4ADFC)
+    background-image: linear-gradient(to right, #ACBCFF, #D4ADFC);
+    font-family: 'Montserrat', sans-serif;
 }
 
 .calculator-container {
@@ -37,7 +38,17 @@ body {
     align-items: flex-end;
     flex-direction: column;
     color: white;
-    padding: 5%;
+    padding: 3%;
     word-wrap: break-word;
     word-break: break-all;
+}
+
+.display .chain-display {
+    color: #ffffffaa;
+    font-size: clamp(8px, calc(2vw + 8px), 40px);
+}
+
+.display .current-display {
+    color: #ffffff;
+    font-size: clamp(10px, calc(4vw + 10px), 40px);
 }
