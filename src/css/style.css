@@ -4,3 +4,40 @@ body {
     background-image: linear-gradient(to right, #ACBCFF, #D4ADFC)
 }
 
+.calculator-container {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template: minmax(120px, auto)  repeat(5, clamp(50px, calc(5vh + 30px), 100px))/repeat(4, clamp(50px, calc(5vw + 10px), 100px));
+}
+
+.calculator-container > button {
+    cursor: pointer;
+    border: 1px solid white;
+    outline: none;
+    font-size: clamp(10px, calc(2vw + 10px), 2rem);
+}
+
+.calculator-container > button:hover {
+    background-color: white;
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+.display {
+    grid-column: 1/-1;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: column;
+    color: white;
+    padding: 5%;
+    word-wrap: break-word;
+    word-break: break-all;
+}
