@@ -1,4 +1,6 @@
 import './css/style.css';
+import { calculate } from './js-modules/calculator';
+
 let firstOperand = '';
 let secondOperand = '';
 let currentOperation = null;
