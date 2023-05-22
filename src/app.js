@@ -46,8 +46,8 @@ function appendDecimalIndicator() {
     if (resetScreen) screenReset();
     if (bottomScreen.textContent === '') 
         bottomScreen.textContent = '0';
-    if (bottomScreen.textContent.includes('.'))
-        return bottomScreen.textContent += '.';
+    if (bottomScreen.textContent.includes('.')) return;
+    bottomScreen.textContent += '.';
 }
 
 function clearEverything() {
